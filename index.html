@@ -1,43 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>ブラックシステム株式会社</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header>
-		<h1>ブラックシステム株式会社</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">企業情報</a></li>
-				<li><a href="#careers">採用情報</a></li>
-				<li><a href="#philosophy">企業理念</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="about">
-			<h2>企業情報</h2>
-			<p>ブラックシステム株式会社は、〇〇を提供する企業です。</p>
-		</section>
-		<section id="careers">
-			<h2>採用情報</h2>
-			<p>現在、以下のポジションで募集しています。</p>
-			<ul>
-				<li>エンジニア</li>
-				<li>デザイナー</li>
-				<li>マーケター</li>
-			</ul>
-			<a href="#">詳細を見る</a>
-		</section>
-		<section id="philosophy">
-			<h2>企業理念</h2>
-			<p>貧すれば鈍する。私たちは、限りあるリソースを最大限に活用し、よりよい未来を創造するために日々邁進しています。</p>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 ブラックシステム株式会社</p>
-	</footer>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ブラックシステム株式会社</title>
+    <style>
+      /* 全体のスタイル */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #fff;
+        color: #000;
+      }
+      /* ヘッダー */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #000;
+        color: #fff;
+      }
+      header h1 {
+        font-size: 2rem;
+        margin: 0;
+      }
+      /* ナビゲーション */
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      nav li {
+        margin-left: 1rem;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+      /* メインビジュアル */
+      .hero-image {
+        width: 100%;
+        height: 500px;
+        background-image: url('https://example.com/image.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+      /* メインコンテンツ */
+      .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 2rem;
+      }
+      .main-content article {
+        width: 30%;
+        margin-bottom: 2rem;
+      }
+      .main-content h2 {
+        font-size: 1.5rem;
+      }
+      .main-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ブラックシステム株式会社</h1>
+      <nav>
+        <ul>
+          <li><a href="#">企業情報</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">企業理念</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero-image"></div>
+    <div class="main-content">
+      <article>
+        <h2>企業情報</h2>
+        <p>ブラックシステム株式会社は、最新技術を駆使して、次世代のサービスを提供する企業です。</p>
+      </article>
+      <article>
+        <h2>採用情報</h2>
+        <p>現在、若手エンジニアを募集しています。最新技術やデザインに敏感な方々からのご応募をお待ちしております。</p>
+    </article>
+    <article>
+    <h2>企業理念</h2>
+    <p>当社の企業理念は、「貧すれば鈍する」です。私たちは、常に自分たちを磨き、成長し続けることを目指しています。</p>
+    </article>
+    </div>
+    <script>
+    // ここにJavaScriptを記述
+    </script>
+    
+      </body>
+    </html>
