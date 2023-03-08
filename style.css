@@ -1,64 +1,123 @@
-body {
-	background-color: #fff;
-	color: #000;
-	font-family: Arial, sans-serif;
+/* リセットCSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
+/* ヘッダー */
 header {
 	background-color: #000;
 	color: #fff;
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-h1 {
-	margin: 0;
-	font-size: 36px;
-}
-
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-
-nav ul li {
-	margin: 0 10px;
-}
-
-nav ul li a {
-	color: #fff;
-	text-decoration: none;
-}
-
-main {
 	padding: 20px;
 }
 
-section {
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* メインセクション */
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.hero {
+	position: relative;
+	height: 500px;
+	margin-bottom: 80px;
+}
+
+.hero img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.hero p {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 24px;
+	text-align: center;
+}
+
+.about, .careers, .philosophy, .blog {
+	margin-bottom: 80px;
+}
+
+.about h2, .careers h2, .philosophy h2, .blog h2 {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.about p, .careers p, .philosophy p {
+	font-size: 18px;
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+
+.careers ul {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+.careers li {
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+.blog ul {
+	list-style: none;
+}
+
+.blog li {
 	margin-bottom: 40px;
 }
 
-h2 {
+.blog h3 {
 	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
-ul {
-	list-style-type: disc;
-	margin-left: 20px;
+.blog p {
+	font-size: 18px;
+	line-height: 1.8;
+	margin-bottom: 10px;
 }
 
-a {
-	color: #000;
-	text-decoration: none;
-}
-
+/* フッター */
 footer {
 	background-color: #000;
 	color: #fff;
-	padding: 10px;
 	text-align: center;
+	padding: 20px;
 }

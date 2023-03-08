@@ -1,110 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>ブラックシステム株式会社</title>
-    <style>
-      /* 全体のスタイル */
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        background-color: #fff;
-        color: #000;
-      }
-      /* ヘッダー */
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        background-color: #000;
-        color: #fff;
-      }
-      header h1 {
-        font-size: 2rem;
-        margin: 0;
-      }
-      /* ナビゲーション */
-      nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-      }
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-      }
-      nav li {
-        margin-left: 1rem;
-      }
-      nav a {
-        color: #fff;
-        text-decoration: none;
-      }
-      /* メインビジュアル */
-      .hero-image {
-        width: 100%;
-        height: 500px;
-        background-image: url('https://example.com/image.jpg');
-        background-size: cover;
-        background-position: center;
-      }
-      /* メインコンテンツ */
-      .main-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 2rem;
-      }
-      .main-content article {
-        width: 30%;
-        margin-bottom: 2rem;
-      }
-      .main-content h2 {
-        font-size: 1.5rem;
-      }
-      .main-content p {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-top: 0.5rem;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>ブラックシステム株式会社</h1>
-      <nav>
-        <ul>
-          <li><a href="#">企業情報</a></li>
-          <li><a href="#">採用情報</a></li>
-          <li><a href="#">企業理念</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="hero-image"></div>
-    <div class="main-content">
-      <article>
-        <h2>企業情報</h2>
-        <p>ブラックシステム株式会社は、最新技術を駆使して、次世代のサービスを提供する企業です。</p>
-      </article>
-      <article>
-        <h2>採用情報</h2>
-        <p>現在、若手エンジニアを募集しています。最新技術やデザインに敏感な方々からのご応募をお待ちしております。</p>
-    </article>
-    <article>
-    <h2>企業理念</h2>
-    <p>当社の企業理念は、「貧すれば鈍する」です。私たちは、常に自分たちを磨き、成長し続けることを目指しています。</p>
-    </article>
-    </div>
-    <script>
-    // ここにJavaScriptを記述
-    </script>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>ブラックシステム株式会社</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">企業情報</a></li>
+				<li><a href="#">採用情報</a></li>
+				<li><a href="#">企業理念</a></li>
+				<li><a href="#">ブログ</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section class="hero">
+			<img src="https://cdn.pixabay.com/photo/2023/02/26/16/06/squirrel-7816229_960_720.jpg" alt="Hero Image">
+			<h1>ブラックシステム株式会社</h1>
+			<p>最新技術やデザインに敏感な若手エンジニアを応援します</p>
+		</section>
+		
+		<section class="about">
+			<h2>企業情報</h2>
+			<p>ブラックシステム株式会社は、〇〇を提供する企業です。</p>
+		</section>
+		
+		<section class="careers">
+			<h2>採用情報</h2>
+			<p>現在、以下の職種で募集を行っています。</p>
+			<ul>
+				<li>○○エンジニア</li>
+				<li>○○デザイナー</li>
+				<li>○○マーケター</li>
+			</ul>
+			<a href="#">採用情報の詳細を見る</a>
+		</section>
+		
+		<section class="philosophy">
+			<h2>企業理念</h2>
+			<p>「貧すれば鈍する」をモットーに、常に技術力の向上に取り組んでいます。</p>
+		</section>
+		
+		<section class="blog">
+			<h2>ブログ</h2>
+			<ul>
+				<li>
+					<h3>記事タイトル1</h3>
+					<p>記事の要約文です。</p>
+				</li>
+				<li>
+					<h3>記事タイトル2</h3>
+					<p>記事の要約文です。</p>
+				</li>
+				<li>
+					<h3>記事タイトル3</h3>
+					<p>記事の要約文です。</p>
+				</li>
+			</ul>
+			<a href="#">ブログをもっと見る</a>
+        </section>
+    </main>
     
-      </body>
-    </html>
+    <footer>
+        <p>&copy; 2023 ブラックシステム株式会社</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
