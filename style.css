@@ -1,123 +1,104 @@
-/* リセットCSS */
+/* Reset default styles */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* ヘッダー */
-header {
-	background-color: #000;
-	color: #fff;
-	padding: 20px;
-}
-
-nav ul {
-	list-style: none;
-	display: flex;
-}
-
-nav li {
-	margin-right: 20px;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-/* メインセクション */
-main {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 40px 20px;
-}
-
-.hero {
-	position: relative;
-	height: 500px;
-	margin-bottom: 80px;
-}
-
-.hero img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.hero h1 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 48px;
-	font-weight: bold;
-	text-align: center;
-}
-
-.hero p {
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 24px;
-	text-align: center;
-}
-
-.about, .careers, .philosophy, .blog {
-	margin-bottom: 80px;
-}
-
-.about h2, .careers h2, .philosophy h2, .blog h2 {
-	font-size: 32px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.about p, .careers p, .philosophy p {
-	font-size: 18px;
-	line-height: 1.8;
-	margin-bottom: 20px;
-}
-
-.careers ul {
-	list-style: none;
-	margin-bottom: 20px;
-}
-
-.careers li {
-	font-size: 18px;
-	line-height: 1.8;
-}
-
-.blog ul {
-	list-style: none;
-}
-
-.blog li {
-	margin-bottom: 40px;
-}
-
-.blog h3 {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-.blog p {
-	font-size: 18px;
-	line-height: 1.8;
-	margin-bottom: 10px;
-}
-
-/* フッター */
-footer {
-	background-color: #000;
-	color: #fff;
-	text-align: center;
-	padding: 20px;
-}
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F2F2F2;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul li a:hover {
+    color: #000;
+  }
+  
+  .logo img {
+    max-height: 4rem;
+  }
+  
+  /* Styling for the hero image */
+  .hero-image {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Styling for the content section */
+  .content {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #F2F2F2;
+  }
+  
+  .content h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .content p {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    color: #666;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #000;
+  }
+  
+  /* Styling for the footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
